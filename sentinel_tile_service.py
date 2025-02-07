@@ -33,7 +33,7 @@ setup_logging(verbose=3)
 
 
 class SentinelTileService:
-    def _init_(self) -> None:
+    def __init__(self) -> None:
         config = SatelliteProviderConfiguration.objects.get(
             SATProviderName=PROVIDER_PEPS
         )
@@ -42,14 +42,8 @@ class SentinelTileService:
         print("Provider Name:", config.SATProviderName)
         print("Username:", config.Username)
         print("Password:", config.Password)
-        os.environ["EODAG_PEPSAUTHCREDENTIALS_USERNAME"] = config.Username or ""
-        print("--------Environment Variable Set: EODAG_PEPSAUTHCREDENTIALS_USERNAME----------")
-        print("Username Set in ENV:", os.environ["EODAG_PEPSAUTHCREDENTIALS_USERNAME"])
-        os.environ["EODAG_PEPSAUTHCREDENTIALS_PASSWORD"] = config.Password or ""
-        print("--------Environment Variable Set: EODAG_PEPSAUTHCREDENTIALS_PASSWORD----------")
-        print("Password Set in ENV:", os.environ["EODAG_PEPSAUTHCREDENTIALS_PASSWORD"])
-        
-        print("-----Satellite Provider Configuration Completed-----")
+        os.environ["EODAG__PEPS__AUTH__CREDENTIALS__USERNAME"] = config.Username or ""
+        os.environ["EODAG__PEPS__AUTH__CREDENTIALS__PASSWORD"] = config.Password or ""
 
     def search_by_polygon(
         self, product: str, start_date: date, end_date: date, polygon: Polygon
@@ -176,17 +170,20 @@ class SentinelTileService:
                 f"Mna New Collection id is: {new_collection_id}.",
                 sat_image_tile=tile,
                 level=logging.DEBUG,
+                MethodName=self.update_to_database.__qualname__,StatusCode=500
             )
             log(
                 f"Mna New Collection id from satellite tile table is: {tile.New_Collection_ID}.",
                 sat_image_tile=tile,
                 level=logging.DEBUG,
+                MethodName=self.update_to_database.__qualname__,StatusCode=500
             )
 
             log(
                 "Sentinel image tile created Successfully.",
                 sat_image_tile=tile,
                 level=logging.DEBUG,
+                MethodName=self.update_to_database.__qualname__,StatusCode=200
             )
             # Add the SatelliteImageTile object to the list of tiles
             tiles.append(tile)
@@ -198,6 +195,7 @@ class SentinelTileService:
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.INFO,
+            MethodName=self.download.__qualname__,StatusCode=100
         ),
 
         # Create a temporary file
@@ -207,6 +205,7 @@ class SentinelTileService:
                 sat_image_tile=sat_image_tile,
                 source_data=source_data,
                 level=logging.DEBUG,
+                MethodName=self.download.__qualname__,StatusCode=100
             ),
 
             # Write JSON data to the temporary file
@@ -223,6 +222,7 @@ class SentinelTileService:
                 sat_image_tile=sat_image_tile,
                 source_data=source_data,
                 level=logging.DEBUG,
+                MethodName=self.download.__qualname__,StatusCode=100
             ),
 
         # Initialize EODataAccessGateway instance
@@ -235,6 +235,7 @@ class SentinelTileService:
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.DEBUG,
+            MethodName=self.download.__qualname__,StatusCode=100
         ),
 
         # After the process, delete the temporary file
@@ -245,6 +246,7 @@ class SentinelTileService:
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.DEBUG,
+            MethodName=self.download.__qualname__,StatusCode=100
         ),
 
         # Increment download attempts and save the download start time for the satellite image tile
@@ -255,12 +257,14 @@ class SentinelTileService:
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.DEBUG,
+            MethodName=self.download.__qualname__,StatusCode=100
         ),
         log(
             "Saving download start time for satellite image tile.",
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.DEBUG,
+            MethodName=self.download.__qualname__,StatusCode=100
         ),
         sat_image_tile.save()
 
@@ -274,6 +278,7 @@ class SentinelTileService:
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.DEBUG,
+            MethodName=self.download.__qualname__,StatusCode=100
         ),
         sat_image_tile.dl_end_time = timezone.now()
         log(
@@ -281,6 +286,7 @@ class SentinelTileService:
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.DEBUG,
+            MethodName=self.download.__qualname__,StatusCode=100
         ),
         sat_image_tile.save()
 
@@ -289,6 +295,7 @@ class SentinelTileService:
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.DEBUG,
+            MethodName=self.download.__qualname__,StatusCode=200
         ),
 
         return True
@@ -304,6 +311,7 @@ class SentinelTileService:
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.DEBUG,
+            MethodName=self.fetch_metadata.__qualname__,StatusCode=100
         ),
 
         log(
@@ -311,6 +319,7 @@ class SentinelTileService:
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.DEBUG,
+            MethodName=self.fetch_metadata.__qualname__,StatusCode=100
         )
         if sat_image_tile.Product == PRODUCT_SENTINEL2:
             # Initialize an empty dictionary to store metadata
@@ -336,6 +345,7 @@ class SentinelTileService:
                     sat_image_tile=sat_image_tile,
                     source_data=source_data,
                     level=logging.DEBUG,
+                    MethodName=self.fetch_metadata.__qualname__,StatusCode=100
                 )
 
             metadata["Keywords"] = properties.get("keywords", None)
@@ -370,12 +380,14 @@ class SentinelTileService:
                 sat_image_tile=sat_image_tile,
                 source_data=source_data,
                 level=logging.DEBUG,
+                MethodName=self.fetch_metadata.__qualname__,StatusCode=100
             )
             raise Exception(
                 f"No fetching logic found for fetching metadata {sat_image_tile.Product}",
                 sat_image_tile=sat_image_tile,
                 source_data=source_data,
                 level=logging.DEBUG,
+                MethodName=self.fetch_metadata.__qualname__,StatusCode=500
             )
 
     def fetch_target_images(
@@ -388,6 +400,7 @@ class SentinelTileService:
             sat_image_tile=sat_image_tile,
             source_data=source_data,
             level=logging.DEBUG,
+            MethodName=self.fetch_target_images.__qualname__,StatusCode=100
         ),
 
         folder_path = sat_image_tile.extracted_path
@@ -398,6 +411,7 @@ class SentinelTileService:
                 sat_image_tile=sat_image_tile,
                 source_data=source_data,
                 level=logging.DEBUG,
+                MethodName=self.fetch_target_images.__qualname__,StatusCode=100
             ),
             # granule_folder = os.path.join(folder_path, os.listdir(folder_path)[0], 'GRANULE')
             # image_folder = os.path.join(granule_folder, os.listdir(granule_folder)[0], 'IMG_DATA')
@@ -409,6 +423,7 @@ class SentinelTileService:
                 sat_image_tile=sat_image_tile,
                 source_data=source_data,
                 level=logging.DEBUG,
+                MethodName=self.fetch_target_images.__qualname__,StatusCode=100
             ),
             for image in os.listdir(folder_path):
                 item_path = os.path.join(folder_path, image)
@@ -440,6 +455,7 @@ class SentinelTileService:
                             sat_image_tile=sat_image_tile,
                             source_data=source_data,
                             level=logging.DEBUG,
+                            MethodName=self.fetch_target_images.__qualname__,StatusCode=500
                         )
 
                     # Add the renamed file to target_images
@@ -452,6 +468,7 @@ class SentinelTileService:
                         sat_image_tile=sat_image_tile,
                         source_data=source_data,
                         level=logging.DEBUG,
+                        MethodName=self.fetch_target_images.__qualname__,StatusCode=100
                     )
                     target_images.append(image_data)
 
@@ -473,12 +490,14 @@ class SentinelTileService:
                 sat_image_tile=sat_image_tile,
                 source_data=source_data,
                 level=logging.DEBUG,
+                MethodName=self.fetch_target_images.__qualname__,StatusCode=400
             ),
             raise Exception(
                 f"No fetching logic found for product type {sat_image_tile.Product}",
                 sat_image_tile=sat_image_tile,
                 source_data=source_data,
                 level=logging.DEBUG,
+                MethodName=self.fetch_target_images.__qualname__,StatusCode=404
             )
 
         return target_images
