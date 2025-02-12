@@ -17,5 +17,5 @@ class Command(BaseCommand):
     PRODUCT_SENTINEL2,
     datetime.date(2023, 1, 1),
     datetime.date(2023,1,10),
-    polygon=Polygon([])
+    polygon=Polygon([(54.3515 24.2482),(54.3515 24.5338),(54.6371 24.5338),(54.6371 24.2482),(54.3515 24.2482)])
     )
