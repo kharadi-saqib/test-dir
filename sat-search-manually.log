@@ -1,0 +1,23 @@
+---------Selected SATProviderName Configuration-----------
+Config Object: peps
+Provider Name: peps
+Username: shadownt12@gmail.com
+Password: Coderize1234@
+2025-02-12 15:35:08,203 eodag.config                     [DEBUG   ] (tid=140483917959616) Loading configuration from /home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/resources/providers.yml
+2025-02-12 15:35:08,863 eodag.config                     [DEBUG   ] (tid=140483917959616) Loading configuration from /home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag_sentinelsat/providers.yml
+2025-02-12 15:35:08,875 eodag.config                     [INFO    ] (tid=140483917959616) Loading user configuration from: /home/ladsadmin/.config/eodag/eodag.yml
+2025-02-12 15:35:08,889 eodag.core                       [INFO    ] (tid=140483917959616) usgs: provider needing auth for search has been pruned because no crendentials could be found
+2025-02-12 15:35:08,890 eodag.core                       [INFO    ] (tid=140483917959616) aws_eos: provider needing auth for search has been pruned because no crendentials could be found
+2025-02-12 15:35:08,890 eodag.core                       [INFO    ] (tid=140483917959616) meteoblue: provider needing auth for search has been pruned because no crendentials could be found
+2025-02-12 15:35:08,890 eodag.core                       [INFO    ] (tid=140483917959616) hydroweb_next: provider needing auth for search has been pruned because no crendentials could be found
+2025-02-12 15:35:08,890 eodag.core                       [INFO    ] (tid=140483917959616) wekeo: provider needing auth for search has been pruned because no crendentials could be found
+2025-02-12 15:35:08,893 eodag.core                       [DEBUG   ] (tid=140483917959616) Opening product types index in /home/ladsadmin/.config/eodag/.index
+2025-02-12 15:35:08,902 eodag.core                       [INFO    ] (tid=140483917959616) Locations configuration loaded from /home/ladsadmin/.config/eodag/locations.yml
+2025-02-12 15:35:09,250 eodag.core                       [INFO    ] (tid=140483917959616) Searching product type 'S2_MSI_L1C' on provider: peps
+2025-02-12 15:35:09,251 eodag.search.base                [DEBUG   ] (tid=140483917959616) Mapping eodag product type to provider product type
+2025-02-12 15:35:09,251 eodag.search.base                [DEBUG   ] (tid=140483917959616) Getting provider product type definition parameters for S2_MSI_L1C
+2025-02-12 15:35:09,251 eodag.search.qssearch            [DEBUG   ] (tid=140483917959616) Building the query string that will be used for search
+2025-02-12 15:35:09,251 eodag.product.metadata_mapping   [DEBUG   ] (tid=140483917959616) Retrieving queryable metadata from metadata_mapping
+2025-02-12 15:35:09,252 eodag.search.qssearch            [INFO    ] (tid=140483917959616) Sending search request: https://peps.cnes.fr/resto/api/collections/S2ST/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON ((54.3515 24.2482, 54.3515 24.5338, 54.6371 24.5338, 54.6371 24.2482, 54.3515 24.2482))&productType=S2MSI1C&maxRecords=20&page=1
+2025-02-12 15:35:11,797 eodag.search.qssearch            [DEBUG   ] (tid=140483917959616) Adapting 20 plugin results to eodag product representation
+2025-02-12 15:35:11,837 eodag.core                       [INFO    ] (tid=140483917959616) Found 48 result(s) on provider 'peps'
