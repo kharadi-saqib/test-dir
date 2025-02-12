@@ -1,0 +1,879 @@
+iadsstgapphost02
+*** Found local files:
+***   * Airflow/logs/dag_id=B1_Sat_Product_Search_Worker/run_id=manual__2025-02-12T06:07:10.859800+00:00/task_id=sat_search_sub_worker/map_index=0/attempt=1.log
+[2025-02-12T06:07:15.395+0000] {taskinstance.py:1094} DEBUG - previous_execution_date was called
+[2025-02-12T06:07:15.431+0000] {__init__.py:51} DEBUG - Loading core task runner: StandardTaskRunner
+[2025-02-12T06:07:15.452+0000] {taskinstance.py:1094} DEBUG - previous_execution_date was called
+[2025-02-12T06:07:15.458+0000] {base_task_runner.py:68} DEBUG - Planning to run as the  user
+[2025-02-12T06:07:15.461+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> from DB
+[2025-02-12T06:07:15.488+0000] {taskinstance.py:1168} DEBUG - <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> dependency 'Task has been mapped' PASSED: True, The task has been mapped
+[2025-02-12T06:07:15.488+0000] {taskinstance.py:1168} DEBUG - <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2025-02-12T06:07:15.489+0000] {taskinstance.py:1168} DEBUG - <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> dependency 'Task Instance State' PASSED: True, Task state queued was valid.
+[2025-02-12T06:07:15.489+0000] {taskinstance.py:1168} DEBUG - <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2025-02-12T06:07:15.489+0000] {taskinstance.py:1168} DEBUG - <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> dependency 'Task Instance Not Running' PASSED: True, Task is not in running state.
+[2025-02-12T06:07:15.489+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]>
+[2025-02-12T06:07:15.491+0000] {taskinstance.py:1168} DEBUG - <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> dependency 'Task has been mapped' PASSED: True, The task has been mapped
+[2025-02-12T06:07:15.491+0000] {taskinstance.py:1168} DEBUG - <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> dependency 'Previous Dagrun State' PASSED: True, The task did not have depends_on_past set.
+[2025-02-12T06:07:15.494+0000] {taskinstance.py:1168} DEBUG - <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> dependency 'Not In Retry Period' PASSED: True, The task instance was not marked for retrying.
+[2025-02-12T06:07:15.497+0000] {taskinstance.py:1168} DEBUG - <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> dependency 'Pool Slots Available' PASSED: True, There are enough open slots in default_pool to execute the task
+[2025-02-12T06:07:15.498+0000] {taskinstance.py:1168} DEBUG - <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]> dependency 'Task Concurrency' PASSED: True, Task concurrency is not set.
+[2025-02-12T06:07:15.498+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [queued]>
+[2025-02-12T06:07:15.498+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-02-12T06:07:15.510+0000] {taskinstance.py:1382} INFO - Executing <Mapped(_PythonDecoratedOperator): sat_search_sub_worker> on 2025-02-12 06:07:10.859800+00:00
+[2025-02-12T06:07:15.515+0000] {standard_task_runner.py:57} INFO - Started process 377572 to run task
+[2025-02-12T06:07:15.521+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'B1_Sat_Product_Search_Worker', 'sat_search_sub_worker', 'manual__2025-02-12T06:07:10.859800+00:00', '--job-id', '338876', '--raw', '--subdir', '/home/ladsadmin/FGICWebApp/Airflow/dags/b1_sat_product_search_worker.py', '--cfg-path', '/tmp/tmpg_a2yt49', '--map-index', '0']
+[2025-02-12T06:07:15.528+0000] {standard_task_runner.py:85} INFO - Job 338876: Subtask sat_search_sub_worker
+[2025-02-12T06:07:15.529+0000] {cli_action_loggers.py:67} DEBUG - Calling callbacks: [<function default_action_log at 0x7f4f040bbf40>]
+[2025-02-12T06:07:15.616+0000] {taskinstance.py:1094} DEBUG - previous_execution_date was called
+[2025-02-12T06:07:15.625+0000] {task_command.py:416} INFO - Running <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> on host iadsstgapphost02
+[2025-02-12T06:07:15.625+0000] {settings.py:373} DEBUG - Disposing DB connection pool (PID 377572)
+[2025-02-12T06:07:15.625+0000] {settings.py:234} DEBUG - Setting up DB connection pool (PID 377572)
+[2025-02-12T06:07:15.626+0000] {settings.py:305} DEBUG - settings.prepare_engine_args(): Using NullPool
+[2025-02-12T06:07:15.627+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:07:15.691+0000] {taskinstance.py:1094} DEBUG - previous_execution_date was called
+[2025-02-12T06:07:15.701+0000] {taskinstance.py:925} DEBUG - Clearing XCom data
+[2025-02-12T06:07:15.754+0000] {retries.py:93} DEBUG - Running RenderedTaskInstanceFields.write with retries. Try 1 of 3
+[2025-02-12T06:07:15.780+0000] {retries.py:93} DEBUG - Running RenderedTaskInstanceFields._do_delete_old_records with retries. Try 1 of 3
+[2025-02-12T06:07:15.807+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='B1_Sat_Product_Search_Worker' AIRFLOW_CTX_TASK_ID='sat_search_sub_worker' AIRFLOW_CTX_EXECUTION_DATE='2025-02-12T06:07:10.859800+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-12T06:07:10.859800+00:00'
+[2025-02-12T06:07:15.807+0000] {__init__.py:116} DEBUG - Preparing lineage inlets and outlets
+[2025-02-12T06:07:15.808+0000] {__init__.py:157} DEBUG - inlets: [], outlets: []
+[2025-02-12T06:07:15.808+0000] {b1_sat_product_search_worker.py:31} INFO - Satellite Product Search worker started its work.
+[2025-02-12T06:07:16.281+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Checking if Item is Eligible to Start SatProductSearchWorker.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.287+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Checking if search is already completed or not for an item.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.290+0000] {_base_logger.py:40} INFO - {"worker": "SatProductSearchWorker", "msg": "Now Starting SatProductSearchWorker.", "level": "INFO", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.293+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Reached at the 'process_started_worker' Method & About to Execute.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.296+0000] {_base_logger.py:40} INFO - {"worker": "SatProductSearchWorker", "msg": "Well Done!! SatProductSearchWorker Started.", "level": "INFO", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.298+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Create an instance of NewCollectionRequestService.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.301+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "'search' method of the service is about to execute to perform the search operation.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.303+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Inside 'search' method of NewCollectionRequestService.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.306+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Extracting Product from new collection request.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.308+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Checking the type of product and selecting appropriate service for search.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.311+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Initializing SentinelTileService.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.320+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Searching for Tiles within the specified Polygon and Time Range.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:07:16.563+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:16,563 eodag.config                     [DEBUG   ] (tid=139977393054144) Loading configuration from /home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/resources/providers.yml
+[2025-02-12T06:07:16.563+0000] {config.py:251} DEBUG - Loading configuration from /home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/resources/providers.yml
+[2025-02-12T06:07:17.346+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,346 eodag.config                     [DEBUG   ] (tid=139977393054144) Loading configuration from /home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag_sentinelsat/providers.yml
+[2025-02-12T06:07:17.346+0000] {config.py:251} DEBUG - Loading configuration from /home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag_sentinelsat/providers.yml
+[2025-02-12T06:07:17.358+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,358 eodag.config                     [INFO    ] (tid=139977393054144) Loading user configuration from: /home/ladsadmin/.config/eodag/eodag.yml
+[2025-02-12T06:07:17.358+0000] {config.py:312} INFO - Loading user configuration from: /home/ladsadmin/.config/eodag/eodag.yml
+[2025-02-12T06:07:17.373+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,373 eodag.core                       [INFO    ] (tid=139977393054144) usgs: provider needing auth for search has been pruned because no crendentials could be found
+[2025-02-12T06:07:17.373+0000] {core.py:376} INFO - usgs: provider needing auth for search has been pruned because no crendentials could be found
+[2025-02-12T06:07:17.373+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,373 eodag.core                       [INFO    ] (tid=139977393054144) aws_eos: provider needing auth for search has been pruned because no crendentials could be found
+[2025-02-12T06:07:17.373+0000] {core.py:404} INFO - aws_eos: provider needing auth for search has been pruned because no crendentials could be found
+[2025-02-12T06:07:17.374+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,374 eodag.core                       [INFO    ] (tid=139977393054144) meteoblue: provider needing auth for search has been pruned because no crendentials could be found
+[2025-02-12T06:07:17.374+0000] {core.py:404} INFO - meteoblue: provider needing auth for search has been pruned because no crendentials could be found
+[2025-02-12T06:07:17.374+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,374 eodag.core                       [INFO    ] (tid=139977393054144) hydroweb_next: provider needing auth for search has been pruned because no crendentials could be found
+[2025-02-12T06:07:17.374+0000] {core.py:404} INFO - hydroweb_next: provider needing auth for search has been pruned because no crendentials could be found
+[2025-02-12T06:07:17.374+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,374 eodag.core                       [INFO    ] (tid=139977393054144) wekeo: provider needing auth for search has been pruned because no crendentials could be found
+[2025-02-12T06:07:17.374+0000] {core.py:404} INFO - wekeo: provider needing auth for search has been pruned because no crendentials could be found
+[2025-02-12T06:07:17.378+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,378 eodag.core                       [DEBUG   ] (tid=139977393054144) Opening product types index in /home/ladsadmin/.config/eodag/.index
+[2025-02-12T06:07:17.378+0000] {core.py:209} DEBUG - Opening product types index in /home/ladsadmin/.config/eodag/.index
+[2025-02-12T06:07:17.387+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,387 eodag.core                       [INFO    ] (tid=139977393054144) Locations configuration loaded from /home/ladsadmin/.config/eodag/locations.yml
+[2025-02-12T06:07:17.387+0000] {core.py:453} INFO - Locations configuration loaded from /home/ladsadmin/.config/eodag/locations.yml
+[2025-02-12T06:07:17.660+0000] {core.py:1467} INFO - Searching product type 'S2_MSI_L1C' on provider: peps
+[2025-02-12T06:07:17.661+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,660 eodag.core                       [INFO    ] (tid=139977393054144) Searching product type 'S2_MSI_L1C' on provider: peps
+[2025-02-12T06:07:17.661+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,661 eodag.search.base                [DEBUG   ] (tid=139977393054144) Mapping eodag product type to provider product type
+[2025-02-12T06:07:17.661+0000] {base.py:81} DEBUG - Mapping eodag product type to provider product type
+[2025-02-12T06:07:17.662+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,662 eodag.search.base                [DEBUG   ] (tid=139977393054144) Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:07:17.662+0000] {base.py:95} DEBUG - Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:07:17.662+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,662 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Building the query string that will be used for search
+[2025-02-12T06:07:17.662+0000] {qssearch.py:481} DEBUG - Building the query string that will be used for search
+[2025-02-12T06:07:17.662+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,662 eodag.product.metadata_mapping   [DEBUG   ] (tid=139977393054144) Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:07:17.662+0000] {metadata_mapping.py:1210} DEBUG - Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:07:17.666+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:17,666 eodag.search.qssearch            [INFO    ] (tid=139977393054144) Sending search request: https://peps.cnes.fr/resto/api/collections/S2ST/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON ((54.3515 24.2482, 54.3515 24.5338, 54.6371 24.5338, 54.6371 24.2482, 54.3515 24.2482))&productType=S2MSI1C&maxRecords=20&page=1
+[2025-02-12T06:07:17.666+0000] {qssearch.py:799} INFO - Sending search request: https://peps.cnes.fr/resto/api/collections/S2ST/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON ((54.3515 24.2482, 54.3515 24.5338, 54.6371 24.5338, 54.6371 24.2482, 54.3515 24.2482))&productType=S2MSI1C&maxRecords=20&page=1
+[2025-02-12T06:07:17.669+0000] {connectionpool.py:1014} DEBUG - Starting new HTTPS connection (1): peps.cnes.fr:443
+[2025-02-12T06:07:20.578+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:07:20.599+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:07:24.302+0000] {qssearch.py:807} ERROR - Skipping error while searching for peps QueryStringSearch instance: 
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 461, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.10/ssl.py", line 1303, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.10/ssl.py", line 1159, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 357, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='peps.cnes.fr', port=443): Read timed out. (read timeout=5)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 800, in _request
+    response = requests.get(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='peps.cnes.fr', port=443): Read timed out. (read timeout=5)
+[2025-02-12T06:07:24.321+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,302 eodag.search.qssearch            [ERROR   ] (tid=139977393054144) Skipping error while searching for peps QueryStringSearch instance: 
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 461, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.10/ssl.py", line 1303, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.10/ssl.py", line 1159, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 357, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='peps.cnes.fr', port=443): Read timed out. (read timeout=5)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 800, in _request
+    response = requests.get(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='peps.cnes.fr', port=443): Read timed out. (read timeout=5)
+[2025-02-12T06:07:24.322+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,322 eodag.core                       [INFO    ] (tid=139977393054144) No result from provider 'peps' due to an error during search. Raise verbosity of log messages for details
+[2025-02-12T06:07:24.322+0000] {core.py:1654} INFO - No result from provider 'peps' due to an error during search. Raise verbosity of log messages for details
+[2025-02-12T06:07:24.322+0000] {core.py:1660} ERROR - Error while searching on provider peps (ignored):
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 461, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.10/ssl.py", line 1303, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.10/ssl.py", line 1159, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 357, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='peps.cnes.fr', port=443): Read timed out. (read timeout=5)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 800, in _request
+    response = requests.get(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='peps.cnes.fr', port=443): Read timed out. (read timeout=5)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/api/core.py", line 1540, in _do_search
+    res, nb_res = search_plugin.query(count=count, auth=auth_plugin, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 464, in query
+    provider_results = self.do_search(items_per_page=items_per_page, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 557, in do_search
+    response = self._request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 816, in _request
+    raise RequestError(str(err))
+eodag.utils.exceptions.RequestError: HTTPSConnectionPool(host='peps.cnes.fr', port=443): Read timed out. (read timeout=5)
+[2025-02-12T06:07:24.324+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,322 eodag.core                       [ERROR   ] (tid=139977393054144) Error while searching on provider peps (ignored):
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 466, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 461, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.10/ssl.py", line 1303, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.10/ssl.py", line 1159, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 357, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='peps.cnes.fr', port=443): Read timed out. (read timeout=5)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 800, in _request
+    response = requests.get(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='peps.cnes.fr', port=443): Read timed out. (read timeout=5)
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/api/core.py", line 1540, in _do_search
+    res, nb_res = search_plugin.query(count=count, auth=auth_plugin, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 464, in query
+    provider_results = self.do_search(items_per_page=items_per_page, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 557, in do_search
+    response = self._request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 816, in _request
+    raise RequestError(str(err))
+eodag.utils.exceptions.RequestError: HTTPSConnectionPool(host='peps.cnes.fr', port=443): Read timed out. (read timeout=5)
+[2025-02-12T06:07:24.325+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,325 eodag.core                       [WARNING ] (tid=139977393054144) No result could be obtained from provider peps, we will try to get the data from another provider
+[2025-02-12T06:07:24.325+0000] {core.py:951} WARNING - No result could be obtained from provider peps, we will try to get the data from another provider
+[2025-02-12T06:07:24.325+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,325 eodag.plugins.apis.sentinelsat   [DEBUG   ] (tid=139977393054144) Initializing Sentinelsat API
+[2025-02-12T06:07:24.325+0000] {eodag_sentinelsat.py:429} DEBUG - Initializing Sentinelsat API
+[2025-02-12T06:07:24.326+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,326 eodag.search.base                [DEBUG   ] (tid=139977393054144) Mapping eodag product type to provider product type
+[2025-02-12T06:07:24.326+0000] {base.py:81} DEBUG - Mapping eodag product type to provider product type
+[2025-02-12T06:07:24.327+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,327 eodag.search.base                [DEBUG   ] (tid=139977393054144) Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:07:24.327+0000] {base.py:95} DEBUG - Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:07:24.327+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,327 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Building the query string that will be used for search
+[2025-02-12T06:07:24.327+0000] {qssearch.py:481} DEBUG - Building the query string that will be used for search
+[2025-02-12T06:07:24.328+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,328 eodag.product.metadata_mapping   [DEBUG   ] (tid=139977393054144) Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:07:24.328+0000] {metadata_mapping.py:1210} DEBUG - Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:07:24.329+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,329 eodag.plugins.apis.sentinelsat   [INFO    ] (tid=139977393054144) Sending count request with `sentinelsat`
+[2025-02-12T06:07:24.329+0000] {eodag_sentinelsat.py:125} INFO - Sending count request with `sentinelsat`
+[2025-02-12T06:07:24.329+0000] {sentinel.py:382} DEBUG - Sub-query: offset=0, limit=0
+[2025-02-12T06:07:24.330+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:07:24,329 sentinelsat.SentinelAPI          [DEBUG   ] (tid=139977393054144) Sub-query: offset=0, limit=0
+[2025-02-12T06:07:24.331+0000] {connectionpool.py:1014} DEBUG - Starting new HTTPS connection (1): apihub.copernicus.eu:443
+[2025-02-12T06:07:25.660+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:07:25.685+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:07:30.750+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:07:30.766+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:07:35.827+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:07:35.854+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:07:40.915+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:07:40.937+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:07:45.992+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:07:46.012+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:07:51.072+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:07:51.098+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:07:56.160+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:07:56.188+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:01.247+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:01.270+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:06.322+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:06.339+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:11.392+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:11.410+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:16.471+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:16.503+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:21.566+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:21.590+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:26.649+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:26.671+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:31.735+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:31.758+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:36.819+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:36.839+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:41.903+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:41.924+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:46.982+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:47.002+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:52.064+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:52.092+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:08:57.155+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:08:57.185+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:02.244+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:02.267+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:07.334+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:07.355+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:12.412+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:12.433+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:17.492+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:17.515+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:22.574+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:22.594+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:27.650+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:27.674+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:32.729+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:32.749+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:35.802+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:35,802 eodag.core                       [INFO    ] (tid=139977393054144) No result from provider 'scihub' due to an error during search. Raise verbosity of log messages for details
+[2025-02-12T06:09:35.802+0000] {core.py:1654} INFO - No result from provider 'scihub' due to an error during search. Raise verbosity of log messages for details
+[2025-02-12T06:09:35.803+0000] {core.py:1660} ERROR - Error while searching on provider scihub (ignored):
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 403, in _make_request
+    self._validate_conn(conn)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1053, in _validate_conn
+    conn.connect()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f4ed8fe7c70>, 'Connection to apihub.copernicus.eu timed out. (connect timeout=None)')
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='apihub.copernicus.eu', port=443): Max retries exceeded with url: /apihub/search?format=json&rows=0&start=0&q=beginPosition%3A%5B%222024-06-30T00%3A00%3A00Z%22+TO+%222024-07-31T00%3A00%3A00Z%22%5D+platformname%3A%22Sentinel-2%22+producttype%3A%22S2MSI1C%22+footprint%3A%22Intersects%28POLYGON+%28%2854.3515+24.2482%2C+54.3515+24.5338%2C+54.6371+24.5338%2C+54.6371+24.2482%2C+54.3515+24.2482%29%29%29%22 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f4ed8fe7c70>, 'Connection to apihub.copernicus.eu timed out. (connect timeout=None)'))
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/api/core.py", line 1540, in _do_search
+    res, nb_res = search_plugin.query(count=count, auth=auth_plugin, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag_sentinelsat/eodag_sentinelsat.py", line 126, in query
+    total_count = self.api.count(**query_params)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/sentinelsat/sentinel.py", line 351, in count
+    _, total_count = self._load_query(query, limit=0)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/sentinelsat/sentinel.py", line 355, in _load_query
+    products, count = self._load_subquery(query, order_by, limit, offset)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/sentinelsat/sentinel.py", line 388, in _load_subquery
+    response = self.session.get(url, params={"q": query.encode("latin1")})
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='apihub.copernicus.eu', port=443): Max retries exceeded with url: /apihub/search?format=json&rows=0&start=0&q=beginPosition%3A%5B%222024-06-30T00%3A00%3A00Z%22+TO+%222024-07-31T00%3A00%3A00Z%22%5D+platformname%3A%22Sentinel-2%22+producttype%3A%22S2MSI1C%22+footprint%3A%22Intersects%28POLYGON+%28%2854.3515+24.2482%2C+54.3515+24.5338%2C+54.6371+24.5338%2C+54.6371+24.2482%2C+54.3515+24.2482%29%29%29%22 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f4ed8fe7c70>, 'Connection to apihub.copernicus.eu timed out. (connect timeout=None)'))
+[2025-02-12T06:09:35.814+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:35,803 eodag.core                       [ERROR   ] (tid=139977393054144) Error while searching on provider scihub (ignored):
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 403, in _make_request
+    self._validate_conn(conn)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1053, in _validate_conn
+    conn.connect()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x7f4ed8fe7c70>, 'Connection to apihub.copernicus.eu timed out. (connect timeout=None)')
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='apihub.copernicus.eu', port=443): Max retries exceeded with url: /apihub/search?format=json&rows=0&start=0&q=beginPosition%3A%5B%222024-06-30T00%3A00%3A00Z%22+TO+%222024-07-31T00%3A00%3A00Z%22%5D+platformname%3A%22Sentinel-2%22+producttype%3A%22S2MSI1C%22+footprint%3A%22Intersects%28POLYGON+%28%2854.3515+24.2482%2C+54.3515+24.5338%2C+54.6371+24.5338%2C+54.6371+24.2482%2C+54.3515+24.2482%29%29%29%22 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f4ed8fe7c70>, 'Connection to apihub.copernicus.eu timed out. (connect timeout=None)'))
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/api/core.py", line 1540, in _do_search
+    res, nb_res = search_plugin.query(count=count, auth=auth_plugin, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag_sentinelsat/eodag_sentinelsat.py", line 126, in query
+    total_count = self.api.count(**query_params)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/sentinelsat/sentinel.py", line 351, in count
+    _, total_count = self._load_query(query, limit=0)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/sentinelsat/sentinel.py", line 355, in _load_query
+    products, count = self._load_subquery(query, order_by, limit, offset)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/sentinelsat/sentinel.py", line 388, in _load_subquery
+    response = self.session.get(url, params={"q": query.encode("latin1")})
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='apihub.copernicus.eu', port=443): Max retries exceeded with url: /apihub/search?format=json&rows=0&start=0&q=beginPosition%3A%5B%222024-06-30T00%3A00%3A00Z%22+TO+%222024-07-31T00%3A00%3A00Z%22%5D+platformname%3A%22Sentinel-2%22+producttype%3A%22S2MSI1C%22+footprint%3A%22Intersects%28POLYGON+%28%2854.3515+24.2482%2C+54.3515+24.5338%2C+54.6371+24.5338%2C+54.6371+24.2482%2C+54.3515+24.2482%29%29%29%22 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f4ed8fe7c70>, 'Connection to apihub.copernicus.eu timed out. (connect timeout=None)'))
+[2025-02-12T06:09:35.815+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:35,815 eodag.core                       [WARNING ] (tid=139977393054144) No result could be obtained from provider scihub, we will try to get the data from another provider
+[2025-02-12T06:09:35.815+0000] {core.py:951} WARNING - No result could be obtained from provider scihub, we will try to get the data from another provider
+[2025-02-12T06:09:35.816+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:35,816 eodag.search.base                [DEBUG   ] (tid=139977393054144) Mapping eodag product type to provider product type
+[2025-02-12T06:09:35.816+0000] {base.py:81} DEBUG - Mapping eodag product type to provider product type
+[2025-02-12T06:09:35.816+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:35,816 eodag.search.base                [DEBUG   ] (tid=139977393054144) Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:35.816+0000] {base.py:95} DEBUG - Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:35.817+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:35,817 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Building the query string that will be used for search
+[2025-02-12T06:09:35.817+0000] {qssearch.py:481} DEBUG - Building the query string that will be used for search
+[2025-02-12T06:09:35.817+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:35,817 eodag.product.metadata_mapping   [DEBUG   ] (tid=139977393054144) Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:35.817+0000] {metadata_mapping.py:1210} DEBUG - Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:35.818+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:35,818 eodag.search.qssearch            [INFO    ] (tid=139977393054144) Sending search request: http://datahub.creodias.eu/resto/api/collections/SENTINEL-2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON ((54.3515 24.2482, 54.3515 24.5338, 54.6371 24.5338, 54.6371 24.2482, 54.3515 24.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1
+[2025-02-12T06:09:35.818+0000] {qssearch.py:799} INFO - Sending search request: http://datahub.creodias.eu/resto/api/collections/SENTINEL-2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON ((54.3515 24.2482, 54.3515 24.5338, 54.6371 24.5338, 54.6371 24.2482, 54.3515 24.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1
+[2025-02-12T06:09:35.821+0000] {connectionpool.py:245} DEBUG - Starting new HTTP connection (1): datahub.creodias.eu:80
+[2025-02-12T06:09:36.523+0000] {connectionpool.py:473} DEBUG - http://datahub.creodias.eu:80 "GET /resto/api/collections/SENTINEL-2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON%20((54.3515%2024.2482,%2054.3515%2024.5338,%2054.6371%2024.5338,%2054.6371%2024.2482,%2054.3515%2024.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1 HTTP/1.1" 504 2565
+[2025-02-12T06:09:36.524+0000] {qssearch.py:807} ERROR - Skipping error while searching for creodias QueryStringSearch instance: 
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 803, in _request
+    response.raise_for_status()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 504 Server Error: Gateway Timeout for url: http://datahub.creodias.eu/resto/api/collections/SENTINEL-2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON%20((54.3515%2024.2482,%2054.3515%2024.5338,%2054.6371%2024.5338,%2054.6371%2024.2482,%2054.3515%2024.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1
+[2025-02-12T06:09:36.527+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:36,524 eodag.search.qssearch            [ERROR   ] (tid=139977393054144) Skipping error while searching for creodias QueryStringSearch instance: 
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 803, in _request
+    response.raise_for_status()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 504 Server Error: Gateway Timeout for url: http://datahub.creodias.eu/resto/api/collections/SENTINEL-2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON%20((54.3515%2024.2482,%2054.3515%2024.5338,%2054.6371%2024.5338,%2054.6371%2024.2482,%2054.3515%2024.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1
+[2025-02-12T06:09:36.527+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:36,527 eodag.core                       [INFO    ] (tid=139977393054144) No result from provider 'creodias' due to an error during search. Raise verbosity of log messages for details
+[2025-02-12T06:09:36.527+0000] {core.py:1654} INFO - No result from provider 'creodias' due to an error during search. Raise verbosity of log messages for details
+[2025-02-12T06:09:36.528+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:36,528 eodag.core                       [ERROR   ] (tid=139977393054144) Error while searching on provider creodias (ignored):
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 803, in _request
+    response.raise_for_status()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 504 Server Error: Gateway Timeout for url: http://datahub.creodias.eu/resto/api/collections/SENTINEL-2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON%20((54.3515%2024.2482,%2054.3515%2024.5338,%2054.6371%2024.5338,%2054.6371%2024.2482,%2054.3515%2024.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/api/core.py", line 1540, in _do_search
+    res, nb_res = search_plugin.query(count=count, auth=auth_plugin, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 464, in query
+    provider_results = self.do_search(items_per_page=items_per_page, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 557, in do_search
+    response = self._request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 816, in _request
+    raise RequestError(str(err))
+eodag.utils.exceptions.RequestError: 504 Server Error: Gateway Timeout for url: http://datahub.creodias.eu/resto/api/collections/SENTINEL-2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON%20((54.3515%2024.2482,%2054.3515%2024.5338,%2054.6371%2024.5338,%2054.6371%2024.2482,%2054.3515%2024.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1
+[2025-02-12T06:09:36.528+0000] {core.py:1660} ERROR - Error while searching on provider creodias (ignored):
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 803, in _request
+    response.raise_for_status()
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 504 Server Error: Gateway Timeout for url: http://datahub.creodias.eu/resto/api/collections/SENTINEL-2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON%20((54.3515%2024.2482,%2054.3515%2024.5338,%2054.6371%2024.5338,%2054.6371%2024.2482,%2054.3515%2024.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/api/core.py", line 1540, in _do_search
+    res, nb_res = search_plugin.query(count=count, auth=auth_plugin, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 464, in query
+    provider_results = self.do_search(items_per_page=items_per_page, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 557, in do_search
+    response = self._request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 816, in _request
+    raise RequestError(str(err))
+eodag.utils.exceptions.RequestError: 504 Server Error: Gateway Timeout for url: http://datahub.creodias.eu/resto/api/collections/SENTINEL-2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON%20((54.3515%2024.2482,%2054.3515%2024.5338,%2054.6371%2024.5338,%2054.6371%2024.2482,%2054.3515%2024.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1
+[2025-02-12T06:09:36.529+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:36,529 eodag.core                       [WARNING ] (tid=139977393054144) No result could be obtained from provider creodias, we will try to get the data from another provider
+[2025-02-12T06:09:36.529+0000] {core.py:951} WARNING - No result could be obtained from provider creodias, we will try to get the data from another provider
+[2025-02-12T06:09:36.530+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:36,530 eodag.search.base                [DEBUG   ] (tid=139977393054144) Mapping eodag product type to provider product type
+[2025-02-12T06:09:36.530+0000] {base.py:81} DEBUG - Mapping eodag product type to provider product type
+[2025-02-12T06:09:36.530+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:36,530 eodag.search.base                [DEBUG   ] (tid=139977393054144) Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:36.530+0000] {base.py:95} DEBUG - Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:36.531+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:36,531 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Building the query string that will be used for search
+[2025-02-12T06:09:36.531+0000] {qssearch.py:481} DEBUG - Building the query string that will be used for search
+[2025-02-12T06:09:36.531+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:36,531 eodag.product.metadata_mapping   [DEBUG   ] (tid=139977393054144) Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:36.531+0000] {metadata_mapping.py:1210} DEBUG - Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:36.535+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:36,535 eodag.search.qssearch            [INFO    ] (tid=139977393054144) Sending count request: https://catalogue.onda-dias.eu/dias-catalogue/Products/$count?$search=%22footprint:%22Intersects%28POLYGON%20%28%2854.3515%2024.2482%2C%2054.3515%2024.5338%2C%2054.6371%2024.5338%2C%2054.6371%2024.2482%2C%2054.3515%2024.2482%29%29%29%22%20AND%20productType:S2MSI1C%20AND%20beginPosition:[2024-06-30T00:00:00.000Z%20TO%20%2A]%20AND%20endPosition:[%2A%20TO%202024-07-31T00:00:00.000Z]%22
+[2025-02-12T06:09:36.535+0000] {qssearch.py:791} INFO - Sending count request: https://catalogue.onda-dias.eu/dias-catalogue/Products/$count?$search=%22footprint:%22Intersects%28POLYGON%20%28%2854.3515%2024.2482%2C%2054.3515%2024.5338%2C%2054.6371%2024.5338%2C%2054.6371%2024.2482%2C%2054.3515%2024.2482%29%29%29%22%20AND%20productType:S2MSI1C%20AND%20beginPosition:[2024-06-30T00:00:00.000Z%20TO%20%2A]%20AND%20endPosition:[%2A%20TO%202024-07-31T00:00:00.000Z]%22
+[2025-02-12T06:09:37.677+0000] {qssearch.py:807} ERROR - Skipping error while counting results for onda ODataV4Search instance: [b'<html>\n', b'\t<head>\n', b'\t\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n', b'\t\t<title>Error 503: Backend unavailable</title>\n', b'\t\t<style type="text/css">\n', b'\t\t\t* {\n', b'\t\t\t\tfont-family: "Trebuchet MS", "Arial", "Lucida grande", "Bitstream Charter", "Liberation sans", "FreeSans", sans-serif;\n', b'\t\t\t\tfont-size: 16px;\n', b'\t\t\t\tline-height: 20px;\n', b'\t\t\t\tcolor: #494949;\n', b'\t\t\t\tpadding: 0;\n', b'\t\t\t\tmargin: 0;\n', b'\t\t\t\tfont-size: normal;\n', b'\t\t\t\tfont-weight: 200;\n', b'\t\t\t}\n', b'\t\t\tbody { background-color: #F1F1F1; padding-top: 95px; }\n', b'\t\t\t.container { padding: 0; margin: 0 auto; max-width: 737px; text-align: center; }\n', b'\t\t\t.block { display: block; }\n', b'\t\t\t.blue { color: #3267BF; }\n', b'\t\t\t.regular { font-weight: 400; }\n', b'\t\t\t.fs30 { font-size: 30px; line-height: 30px; }\n', b'\t\t\t.fs40 { font-size: 40px; line-height: 40px; }\n', b'\t\t\t.fs50 { font-size: 50px; line-height: 50px; }\n', b'\t\t\t.lh45 { line-height: 45px; }\n', b'\t\t</style>\n', b'\t</head>\n', b'\n', b'\t<body>\n', b'\t\t<div class="container">\n', b'\t\t\t<span class="fs50">Error <span class="fs50 regular blue">503:</span> Backend unavailable</span>\n', b'\t\t\t<br/><br/>\n', b'\t\t\tThis type of error results generally from the client server, used as a backend.\n', b'\t\t\t<br/><br/><br/><br/>\n', b'\t\t\t<img src="data:image/png;base64,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" style="width: 100%; max-height: 141px;" />\n', b'\t\t\t<img src="data:image/png;base64,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" style="margin-top: 10px; width: 100%; max-height: 47px;" />\n', b'\t\t\t<br/><br/><br/><br/>\n', b'\t\t\tIf you are a visitor of the website, please try to refresh it or come back in a few minutes.\n', b'\t\t\t<br/>\n', b'\t\t\tIf you are the administrator of the website, please check the configuration of your server and/or SSL Gateway configuration.\n', b'\t\t\t<br/><br/>\n', b'\t\t\t<span class="fs30 blue">In case the problem persists, please <a href="http://www.ovh.com/" class="fs30 blue regular">contact us</a>.</span>\n', b'\t\t\t<br/>\n', b'\t\t\t<a href="https://www.ovh.com/manager/sunrise/sslGateway/index.html#/sslGateway" style="text-decoration: none; display: block; margin-top: 5px;">\n', b'\t\t\t\t<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEVHcEwvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcJ9LcwOAAAAD3RSTlMAQIC/EO/PnyCPXq8w33D5cYUgAAABP0lEQVR4XnWTPU7DQBSEXyASCUbIN4iUgjaIliJpoEekRIoE9EaUNMkNyA2go3RuQBp6bmCukEQ2+RF87Ns1ZLHlaVb6Vt4dz7wVp8ZLBNnDSDzVXrHahB7rkmuxpU/8adXL2Tmebh07GPgwnVp4hi/6yuoRvsj01CYFjQ1sFeHMwG4RLoxxct232+0EVSgBpABfmgAwgIk8wtXvSbvAGywlhnEHOHZ3zpuwliGEal9TS6Bfg0+JQPZhZdgh8CyQibUQ0bf/e3NqLTrY4kMTTHviwSDTtPgWHzYurKH3f1C0hZhwCxGnZGMXBRG4snZY2hIhU/N3eQGXJ2bZU/NxXoDuzuweaw1kbuvDfdLRQAJg6hJKR25vYkO+NvkOITPLEfbich1VxZUrrhiG8thUDFjVKEq9NLTl8a5+COUn8wO6UdQxOrr/VgAAAABJRU5ErkJggg==" style="margin: 0 0 -16px 5px;" />\n', b'\t\t\t</a>\n', b'\t\t</div>\n', b'\t</body>\n', b'</html>\n']
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 793, in _request
+    urllib_response = urlopen(urllib_req, timeout=timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 503: Service Unavailable
+[2025-02-12T06:09:37.681+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:37,677 eodag.search.qssearch            [ERROR   ] (tid=139977393054144) Skipping error while counting results for onda ODataV4Search instance: [b'<html>\n', b'\t<head>\n', b'\t\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>\n', b'\t\t<title>Error 503: Backend unavailable</title>\n', b'\t\t<style type="text/css">\n', b'\t\t\t* {\n', b'\t\t\t\tfont-family: "Trebuchet MS", "Arial", "Lucida grande", "Bitstream Charter", "Liberation sans", "FreeSans", sans-serif;\n', b'\t\t\t\tfont-size: 16px;\n', b'\t\t\t\tline-height: 20px;\n', b'\t\t\t\tcolor: #494949;\n', b'\t\t\t\tpadding: 0;\n', b'\t\t\t\tmargin: 0;\n', b'\t\t\t\tfont-size: normal;\n', b'\t\t\t\tfont-weight: 200;\n', b'\t\t\t}\n', b'\t\t\tbody { background-color: #F1F1F1; padding-top: 95px; }\n', b'\t\t\t.container { padding: 0; margin: 0 auto; max-width: 737px; text-align: center; }\n', b'\t\t\t.block { display: block; }\n', b'\t\t\t.blue { color: #3267BF; }\n', b'\t\t\t.regular { font-weight: 400; }\n', b'\t\t\t.fs30 { font-size: 30px; line-height: 30px; }\n', b'\t\t\t.fs40 { font-size: 40px; line-height: 40px; }\n', b'\t\t\t.fs50 { font-size: 50px; line-height: 50px; }\n', b'\t\t\t.lh45 { line-height: 45px; }\n', b'\t\t</style>\n', b'\t</head>\n', b'\n', b'\t<body>\n', b'\t\t<div class="container">\n', b'\t\t\t<span class="fs50">Error <span class="fs50 regular blue">503:</span> Backend unavailable</span>\n', b'\t\t\t<br/><br/>\n', b'\t\t\tThis type of error results generally from the client server, used as a backend.\n', b'\t\t\t<br/><br/><br/><br/>\n', b'\t\t\t<img src="data:image/png;base64,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" style="width: 100%; max-height: 141px;" />\n', b'\t\t\t<img src="data:image/png;base64,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" style="margin-top: 10px; width: 100%; max-height: 47px;" />\n', b'\t\t\t<br/><br/><br/><br/>\n', b'\t\t\tIf you are a visitor of the website, please try to refresh it or come back in a few minutes.\n', b'\t\t\t<br/>\n', b'\t\t\tIf you are the administrator of the website, please check the configuration of your server and/or SSL Gateway configuration.\n', b'\t\t\t<br/><br/>\n', b'\t\t\t<span class="fs30 blue">In case the problem persists, please <a href="http://www.ovh.com/" class="fs30 blue regular">contact us</a>.</span>\n', b'\t\t\t<br/>\n', b'\t\t\t<a href="https://www.ovh.com/manager/sunrise/sslGateway/index.html#/sslGateway" style="text-decoration: none; display: block; margin-top: 5px;">\n', b'\t\t\t\t<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAMFBMVEVHcEwvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcIvZcJ9LcwOAAAAD3RSTlMAQIC/EO/PnyCPXq8w33D5cYUgAAABP0lEQVR4XnWTPU7DQBSEXyASCUbIN4iUgjaIliJpoEekRIoE9EaUNMkNyA2go3RuQBp6bmCukEQ2+RF87Ns1ZLHlaVb6Vt4dz7wVp8ZLBNnDSDzVXrHahB7rkmuxpU/8adXL2Tmebh07GPgwnVp4hi/6yuoRvsj01CYFjQ1sFeHMwG4RLoxxct232+0EVSgBpABfmgAwgIk8wtXvSbvAGywlhnEHOHZ3zpuwliGEal9TS6Bfg0+JQPZhZdgh8CyQibUQ0bf/e3NqLTrY4kMTTHviwSDTtPgWHzYurKH3f1C0hZhwCxGnZGMXBRG4snZY2hIhU/N3eQGXJ2bZU/NxXoDuzuweaw1kbuvDfdLRQAJg6hJKR25vYkO+NvkOITPLEfbich1VxZUrrhiG8thUDFjVKEq9NLTl8a5+COUn8wO6UdQxOrr/VgAAAABJRU5ErkJggg==" style="margin: 0 0 -16px 5px;" />\n', b'\t\t\t</a>\n', b'\t\t</div>\n', b'\t</body>\n', b'</html>\n']
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 793, in _request
+    urllib_response = urlopen(urllib_req, timeout=timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 503: Service Unavailable
+[2025-02-12T06:09:37.682+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:37,682 eodag.core                       [INFO    ] (tid=139977393054144) No result from provider 'onda' due to an error during search. Raise verbosity of log messages for details
+[2025-02-12T06:09:37.682+0000] {core.py:1654} INFO - No result from provider 'onda' due to an error during search. Raise verbosity of log messages for details
+[2025-02-12T06:09:37.682+0000] {core.py:1660} ERROR - Error while searching on provider onda (ignored):
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 793, in _request
+    urllib_response = urlopen(urllib_req, timeout=timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 503: Service Unavailable
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/api/core.py", line 1540, in _do_search
+    res, nb_res = search_plugin.query(count=count, auth=auth_plugin, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 456, in query
+    self.search_urls, total_items = self.collect_search_urls(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 518, in collect_search_urls
+    _total_results = self.count_hits(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 705, in count_hits
+    response = self._request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 816, in _request
+    raise RequestError(str(err))
+eodag.utils.exceptions.RequestError: HTTP Error 503: Service Unavailable
+[2025-02-12T06:09:37.683+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:37,682 eodag.core                       [ERROR   ] (tid=139977393054144) Error while searching on provider onda (ignored):
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 793, in _request
+    urllib_response = urlopen(urllib_req, timeout=timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.10/urllib/request.py", line 525, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.10/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.10/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.10/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 503: Service Unavailable
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/api/core.py", line 1540, in _do_search
+    res, nb_res = search_plugin.query(count=count, auth=auth_plugin, **kwargs)
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 456, in query
+    self.search_urls, total_items = self.collect_search_urls(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 518, in collect_search_urls
+    _total_results = self.count_hits(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 705, in count_hits
+    response = self._request(
+  File "/home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/eodag/plugins/search/qssearch.py", line 816, in _request
+    raise RequestError(str(err))
+eodag.utils.exceptions.RequestError: HTTP Error 503: Service Unavailable
+[2025-02-12T06:09:37.683+0000] {core.py:951} WARNING - No result could be obtained from provider onda, we will try to get the data from another provider
+[2025-02-12T06:09:37.684+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:37,683 eodag.core                       [WARNING ] (tid=139977393054144) No result could be obtained from provider onda, we will try to get the data from another provider
+[2025-02-12T06:09:37.684+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:37,684 eodag.search.base                [DEBUG   ] (tid=139977393054144) Mapping eodag product type to provider product type
+[2025-02-12T06:09:37.684+0000] {base.py:81} DEBUG - Mapping eodag product type to provider product type
+[2025-02-12T06:09:37.685+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:37,685 eodag.search.base                [DEBUG   ] (tid=139977393054144) Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:37.685+0000] {base.py:95} DEBUG - Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:37.685+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:37,685 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Building the query string that will be used for search
+[2025-02-12T06:09:37.685+0000] {qssearch.py:481} DEBUG - Building the query string that will be used for search
+[2025-02-12T06:09:37.685+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:37,685 eodag.product.metadata_mapping   [DEBUG   ] (tid=139977393054144) Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:37.685+0000] {metadata_mapping.py:1210} DEBUG - Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:37.689+0000] {qssearch.py:1105} INFO - Sending search request: https://eod-catalog-svc-prod.astraea.earth/search
+[2025-02-12T06:09:37.690+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:37,689 eodag.search.qssearch            [INFO    ] (tid=139977393054144) Sending search request: https://eod-catalog-svc-prod.astraea.earth/search
+[2025-02-12T06:09:37.690+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:37,690 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Query parameters: {'collections': ['sentinel2_l1c'], 'datetime': '2024-06-30T00:00:00.000Z/2024-07-31T00:00:00.000Z', 'intersects': {'type': 'Polygon', 'coordinates': [[[54.3515, 24.2482], [54.3515, 24.5338], [54.6371, 24.5338], [54.6371, 24.2482], [54.3515, 24.2482]]]}, 'limit': 20, 'page': 1}
+[2025-02-12T06:09:37.690+0000] {qssearch.py:1106} DEBUG - Query parameters: {'collections': ['sentinel2_l1c'], 'datetime': '2024-06-30T00:00:00.000Z/2024-07-31T00:00:00.000Z', 'intersects': {'type': 'Polygon', 'coordinates': [[[54.3515, 24.2482], [54.3515, 24.5338], [54.6371, 24.5338], [54.6371, 24.2482], [54.3515, 24.2482]]]}, 'limit': 20, 'page': 1}
+[2025-02-12T06:09:37.692+0000] {connectionpool.py:1014} DEBUG - Starting new HTTPS connection (1): eod-catalog-svc-prod.astraea.earth:443
+[2025-02-12T06:09:37.802+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:37.822+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:39.888+0000] {connectionpool.py:473} DEBUG - https://eod-catalog-svc-prod.astraea.earth:443 "POST /search HTTP/1.1" 200 None
+[2025-02-12T06:09:39.891+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,891 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Next page URL could not be collected
+[2025-02-12T06:09:39.891+0000] {qssearch.py:615} DEBUG - Next page URL could not be collected
+[2025-02-12T06:09:39.892+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,892 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Next page Query-object could not be collected
+[2025-02-12T06:09:39.892+0000] {qssearch.py:626} DEBUG - Next page Query-object could not be collected
+[2025-02-12T06:09:39.892+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,892 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Next page merge could not be collected
+[2025-02-12T06:09:39.892+0000] {qssearch.py:635} DEBUG - Next page merge could not be collected
+[2025-02-12T06:09:39.917+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,917 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Adapting 0 plugin results to eodag product representation
+[2025-02-12T06:09:39.917+0000] {qssearch.py:679} DEBUG - Adapting 0 plugin results to eodag product representation
+[2025-02-12T06:09:39.917+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,917 eodag.core                       [INFO    ] (tid=139977393054144) Found 0 result(s) on provider 'astraea_eod'
+[2025-02-12T06:09:39.917+0000] {core.py:1631} INFO - Found 0 result(s) on provider 'astraea_eod'
+[2025-02-12T06:09:39.918+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,918 eodag.core                       [WARNING ] (tid=139977393054144) No result could be obtained from provider astraea_eod, we will try to get the data from another provider
+[2025-02-12T06:09:39.918+0000] {core.py:951} WARNING - No result could be obtained from provider astraea_eod, we will try to get the data from another provider
+[2025-02-12T06:09:39.918+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,918 eodag.search.base                [DEBUG   ] (tid=139977393054144) Mapping eodag product type to provider product type
+[2025-02-12T06:09:39.918+0000] {base.py:81} DEBUG - Mapping eodag product type to provider product type
+[2025-02-12T06:09:39.918+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,918 eodag.search.base                [DEBUG   ] (tid=139977393054144) Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:39.918+0000] {base.py:95} DEBUG - Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:39.918+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,918 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Building the query string that will be used for search
+[2025-02-12T06:09:39.918+0000] {qssearch.py:481} DEBUG - Building the query string that will be used for search
+[2025-02-12T06:09:39.918+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,918 eodag.product.metadata_mapping   [DEBUG   ] (tid=139977393054144) Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:39.918+0000] {metadata_mapping.py:1210} DEBUG - Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:39.919+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,919 eodag.search.qssearch            [INFO    ] (tid=139977393054144) Sending search request: https://earth-search.aws.element84.com/v0/search
+[2025-02-12T06:09:39.919+0000] {qssearch.py:1105} INFO - Sending search request: https://earth-search.aws.element84.com/v0/search
+[2025-02-12T06:09:39.919+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:39,919 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Query parameters: {'collections': ['sentinel-s2-l1c'], 'datetime': '2024-06-30T00:00:00.000Z/2024-07-31T00:00:00.000Z', 'intersects': {'type': 'Polygon', 'coordinates': [[[54.3515, 24.2482], [54.3515, 24.5338], [54.6371, 24.5338], [54.6371, 24.2482], [54.3515, 24.2482]]]}, 'limit': 20, 'page': 1}
+[2025-02-12T06:09:39.919+0000] {qssearch.py:1106} DEBUG - Query parameters: {'collections': ['sentinel-s2-l1c'], 'datetime': '2024-06-30T00:00:00.000Z/2024-07-31T00:00:00.000Z', 'intersects': {'type': 'Polygon', 'coordinates': [[[54.3515, 24.2482], [54.3515, 24.5338], [54.6371, 24.5338], [54.6371, 24.2482], [54.3515, 24.2482]]]}, 'limit': 20, 'page': 1}
+[2025-02-12T06:09:39.920+0000] {connectionpool.py:1014} DEBUG - Starting new HTTPS connection (1): earth-search.aws.element84.com:443
+[2025-02-12T06:09:40.864+0000] {connectionpool.py:473} DEBUG - https://earth-search.aws.element84.com:443 "POST /v0/search HTTP/1.1" 200 198
+[2025-02-12T06:09:40.865+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,865 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Next page Query-object could not be collected
+[2025-02-12T06:09:40.865+0000] {qssearch.py:626} DEBUG - Next page Query-object could not be collected
+[2025-02-12T06:09:40.865+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,865 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Next page merge could not be collected
+[2025-02-12T06:09:40.865+0000] {qssearch.py:635} DEBUG - Next page merge could not be collected
+[2025-02-12T06:09:40.867+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,867 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Adapting 0 plugin results to eodag product representation
+[2025-02-12T06:09:40.867+0000] {qssearch.py:679} DEBUG - Adapting 0 plugin results to eodag product representation
+[2025-02-12T06:09:40.867+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,867 eodag.core                       [INFO    ] (tid=139977393054144) Found 0 result(s) on provider 'earth_search'
+[2025-02-12T06:09:40.867+0000] {core.py:1631} INFO - Found 0 result(s) on provider 'earth_search'
+[2025-02-12T06:09:40.868+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,868 eodag.core                       [WARNING ] (tid=139977393054144) No result could be obtained from provider earth_search, we will try to get the data from another provider
+[2025-02-12T06:09:40.868+0000] {core.py:951} WARNING - No result could be obtained from provider earth_search, we will try to get the data from another provider
+[2025-02-12T06:09:40.868+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,868 eodag.search.base                [DEBUG   ] (tid=139977393054144) Mapping eodag product type to provider product type
+[2025-02-12T06:09:40.868+0000] {base.py:81} DEBUG - Mapping eodag product type to provider product type
+[2025-02-12T06:09:40.868+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,868 eodag.search.base                [DEBUG   ] (tid=139977393054144) Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:40.868+0000] {base.py:95} DEBUG - Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:40.868+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,868 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Building the query string that will be used for search
+[2025-02-12T06:09:40.868+0000] {qssearch.py:481} DEBUG - Building the query string that will be used for search
+[2025-02-12T06:09:40.869+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,869 eodag.product.metadata_mapping   [DEBUG   ] (tid=139977393054144) Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:40.869+0000] {metadata_mapping.py:1210} DEBUG - Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:40.870+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,870 eodag.search.qssearch            [INFO    ] (tid=139977393054144) Sending search request: https://earth-search.aws.element84.com/v0/search
+[2025-02-12T06:09:40.870+0000] {qssearch.py:1105} INFO - Sending search request: https://earth-search.aws.element84.com/v0/search
+[2025-02-12T06:09:40.870+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:40,870 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Query parameters: {'collections': ['sentinel-s2-l1c'], 'datetime': '2024-06-30T00:00:00.000Z/2024-07-31T00:00:00.000Z', 'intersects': {'type': 'Polygon', 'coordinates': [[[54.3515, 24.2482], [54.3515, 24.5338], [54.6371, 24.5338], [54.6371, 24.2482], [54.3515, 24.2482]]]}, 'limit': 20, 'page': 1}
+[2025-02-12T06:09:40.870+0000] {qssearch.py:1106} DEBUG - Query parameters: {'collections': ['sentinel-s2-l1c'], 'datetime': '2024-06-30T00:00:00.000Z/2024-07-31T00:00:00.000Z', 'intersects': {'type': 'Polygon', 'coordinates': [[[54.3515, 24.2482], [54.3515, 24.5338], [54.6371, 24.5338], [54.6371, 24.2482], [54.3515, 24.2482]]]}, 'limit': 20, 'page': 1}
+[2025-02-12T06:09:40.871+0000] {connectionpool.py:1014} DEBUG - Starting new HTTPS connection (1): earth-search.aws.element84.com:443
+[2025-02-12T06:09:41.241+0000] {connectionpool.py:473} DEBUG - https://earth-search.aws.element84.com:443 "POST /v0/search HTTP/1.1" 200 198
+[2025-02-12T06:09:41.243+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:41,243 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Next page Query-object could not be collected
+[2025-02-12T06:09:41.243+0000] {qssearch.py:626} DEBUG - Next page Query-object could not be collected
+[2025-02-12T06:09:41.244+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:41,244 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Next page merge could not be collected
+[2025-02-12T06:09:41.244+0000] {qssearch.py:635} DEBUG - Next page merge could not be collected
+[2025-02-12T06:09:41.246+0000] {qssearch.py:679} DEBUG - Adapting 0 plugin results to eodag product representation
+[2025-02-12T06:09:41.247+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:41,246 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Adapting 0 plugin results to eodag product representation
+[2025-02-12T06:09:41.247+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:41,247 eodag.core                       [INFO    ] (tid=139977393054144) Found 0 result(s) on provider 'earth_search_gcs'
+[2025-02-12T06:09:41.247+0000] {core.py:1631} INFO - Found 0 result(s) on provider 'earth_search_gcs'
+[2025-02-12T06:09:41.248+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:41,248 eodag.core                       [WARNING ] (tid=139977393054144) No result could be obtained from provider earth_search_gcs, we will try to get the data from another provider
+[2025-02-12T06:09:41.248+0000] {core.py:951} WARNING - No result could be obtained from provider earth_search_gcs, we will try to get the data from another provider
+[2025-02-12T06:09:41.248+0000] {base.py:81} DEBUG - Mapping eodag product type to provider product type
+[2025-02-12T06:09:41.249+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:41,248 eodag.search.base                [DEBUG   ] (tid=139977393054144) Mapping eodag product type to provider product type
+[2025-02-12T06:09:41.249+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:41,249 eodag.search.base                [DEBUG   ] (tid=139977393054144) Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:41.249+0000] {base.py:95} DEBUG - Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:41.249+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:41,249 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Building the query string that will be used for search
+[2025-02-12T06:09:41.249+0000] {qssearch.py:481} DEBUG - Building the query string that will be used for search
+[2025-02-12T06:09:41.250+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:41,250 eodag.product.metadata_mapping   [DEBUG   ] (tid=139977393054144) Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:41.250+0000] {metadata_mapping.py:1210} DEBUG - Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:41.251+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:41,251 eodag.search.qssearch            [INFO    ] (tid=139977393054144) Sending search request: https://copernicus.nci.org.au/sara.server/1.0/api/collections/S2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON ((54.3515 24.2482, 54.3515 24.5338, 54.6371 24.5338, 54.6371 24.2482, 54.3515 24.2482))&productType=S2MSIL1C&instrument=MSI&processingLevel=L1C&maxRecords=20&page=1
+[2025-02-12T06:09:41.251+0000] {qssearch.py:799} INFO - Sending search request: https://copernicus.nci.org.au/sara.server/1.0/api/collections/S2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON ((54.3515 24.2482, 54.3515 24.5338, 54.6371 24.5338, 54.6371 24.2482, 54.3515 24.2482))&productType=S2MSIL1C&instrument=MSI&processingLevel=L1C&maxRecords=20&page=1
+[2025-02-12T06:09:41.253+0000] {connectionpool.py:1014} DEBUG - Starting new HTTPS connection (1): copernicus.nci.org.au:443
+[2025-02-12T06:09:42.889+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:42.917+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:44.135+0000] {connectionpool.py:473} DEBUG - https://copernicus.nci.org.au:443 "GET /sara.server/1.0/api/collections/S2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON%20((54.3515%2024.2482,%2054.3515%2024.5338,%2054.6371%2024.5338,%2054.6371%2024.2482,%2054.3515%2024.2482))&productType=S2MSIL1C&instrument=MSI&processingLevel=L1C&maxRecords=20&page=1 HTTP/1.1" 200 1587
+[2025-02-12T06:09:44.138+0000] {qssearch.py:679} DEBUG - Adapting 0 plugin results to eodag product representation
+[2025-02-12T06:09:44.139+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:44,138 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Adapting 0 plugin results to eodag product representation
+[2025-02-12T06:09:44.140+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:44,140 eodag.core                       [INFO    ] (tid=139977393054144) Found 0 result(s) on provider 'sara'
+[2025-02-12T06:09:44.140+0000] {core.py:1631} INFO - Found 0 result(s) on provider 'sara'
+[2025-02-12T06:09:44.140+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:44,140 eodag.core                       [WARNING ] (tid=139977393054144) No result could be obtained from provider sara, we will try to get the data from another provider
+[2025-02-12T06:09:44.140+0000] {core.py:951} WARNING - No result could be obtained from provider sara, we will try to get the data from another provider
+[2025-02-12T06:09:44.141+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:44,141 eodag.search.base                [DEBUG   ] (tid=139977393054144) Mapping eodag product type to provider product type
+[2025-02-12T06:09:44.141+0000] {base.py:81} DEBUG - Mapping eodag product type to provider product type
+[2025-02-12T06:09:44.141+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:44,141 eodag.search.base                [DEBUG   ] (tid=139977393054144) Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:44.141+0000] {base.py:95} DEBUG - Getting provider product type definition parameters for S2_MSI_L1C
+[2025-02-12T06:09:44.142+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:44,142 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Building the query string that will be used for search
+[2025-02-12T06:09:44.142+0000] {qssearch.py:481} DEBUG - Building the query string that will be used for search
+[2025-02-12T06:09:44.142+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:44,142 eodag.product.metadata_mapping   [DEBUG   ] (tid=139977393054144) Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:44.142+0000] {metadata_mapping.py:1210} DEBUG - Retrieving queryable metadata from metadata_mapping
+[2025-02-12T06:09:44.143+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:44,143 eodag.search.qssearch            [INFO    ] (tid=139977393054144) Sending search request: http://catalogue.dataspace.copernicus.eu/resto/api/collections/Sentinel2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON ((54.3515 24.2482, 54.3515 24.5338, 54.6371 24.5338, 54.6371 24.2482, 54.3515 24.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1
+[2025-02-12T06:09:44.143+0000] {qssearch.py:799} INFO - Sending search request: http://catalogue.dataspace.copernicus.eu/resto/api/collections/Sentinel2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON ((54.3515 24.2482, 54.3515 24.5338, 54.6371 24.5338, 54.6371 24.2482, 54.3515 24.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1
+[2025-02-12T06:09:44.147+0000] {connectionpool.py:245} DEBUG - Starting new HTTP connection (1): catalogue.dataspace.copernicus.eu:80
+[2025-02-12T06:09:44.920+0000] {connectionpool.py:473} DEBUG - http://catalogue.dataspace.copernicus.eu:80 "GET /resto/api/collections/Sentinel2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON%20((54.3515%2024.2482,%2054.3515%2024.5338,%2054.6371%2024.5338,%2054.6371%2024.2482,%2054.3515%2024.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1 HTTP/1.1" 302 0
+[2025-02-12T06:09:44.926+0000] {connectionpool.py:1014} DEBUG - Starting new HTTPS connection (1): catalogue.dataspace.copernicus.eu:443
+[2025-02-12T06:09:47.979+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:48.001+0000] {job.py:216} DEBUG - [heartbeat]
+[2025-02-12T06:09:48.697+0000] {connectionpool.py:473} DEBUG - https://catalogue.dataspace.copernicus.eu:443 "GET /resto/api/collections/Sentinel2/search.json?startDate=2024-06-30&completionDate=2024-07-31&geometry=POLYGON%20((54.3515%2024.2482,%2054.3515%2024.5338,%2054.6371%2024.5338,%2054.6371%2024.2482,%2054.3515%2024.2482))&productType=S2MSI1C&maxRecords=20&page=1&exactCount=1 HTTP/1.1" 200 71951
+[2025-02-12T06:09:49.223+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:49,223 eodag.search.qssearch            [DEBUG   ] (tid=139977393054144) Adapting 20 plugin results to eodag product representation
+[2025-02-12T06:09:49.223+0000] {qssearch.py:679} DEBUG - Adapting 20 plugin results to eodag product representation
+[2025-02-12T06:09:49.266+0000] {logging_mixin.py:154} WARNING - 2025-02-12 06:09:49,266 eodag.core                       [INFO    ] (tid=139977393054144) Found 48 result(s) on provider 'cop_dataspace'
+[2025-02-12T06:09:49.266+0000] {core.py:1631} INFO - Found 48 result(s) on provider 'cop_dataspace'
+[2025-02-12T06:09:49.273+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Search Tiles Successfully within the specified Polygon and Time Range.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:49.276+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Updating search results to the database and obtaining created tiles.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:49.286+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (215)"}
+[2025-02-12T06:09:49.289+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (215)"}
+[2025-02-12T06:09:49.291+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (215)"}
+[2025-02-12T06:09:49.297+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (216)"}
+[2025-02-12T06:09:49.299+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (216)"}
+[2025-02-12T06:09:49.302+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (216)"}
+[2025-02-12T06:09:49.307+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (217)"}
+[2025-02-12T06:09:49.310+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (217)"}
+[2025-02-12T06:09:49.312+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (217)"}
+[2025-02-12T06:09:49.318+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (218)"}
+[2025-02-12T06:09:49.321+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (218)"}
+[2025-02-12T06:09:49.323+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (218)"}
+[2025-02-12T06:09:49.329+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (219)"}
+[2025-02-12T06:09:49.332+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (219)"}
+[2025-02-12T06:09:49.334+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (219)"}
+[2025-02-12T06:09:49.341+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (220)"}
+[2025-02-12T06:09:49.343+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (220)"}
+[2025-02-12T06:09:49.346+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (220)"}
+[2025-02-12T06:09:49.352+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (221)"}
+[2025-02-12T06:09:49.354+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (221)"}
+[2025-02-12T06:09:49.356+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (221)"}
+[2025-02-12T06:09:49.362+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (222)"}
+[2025-02-12T06:09:49.365+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (222)"}
+[2025-02-12T06:09:49.367+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (222)"}
+[2025-02-12T06:09:49.373+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (223)"}
+[2025-02-12T06:09:49.376+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (223)"}
+[2025-02-12T06:09:49.378+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (223)"}
+[2025-02-12T06:09:49.384+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (224)"}
+[2025-02-12T06:09:49.387+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (224)"}
+[2025-02-12T06:09:49.389+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (224)"}
+[2025-02-12T06:09:49.395+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (225)"}
+[2025-02-12T06:09:49.398+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (225)"}
+[2025-02-12T06:09:49.400+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (225)"}
+[2025-02-12T06:09:49.406+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (226)"}
+[2025-02-12T06:09:49.408+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (226)"}
+[2025-02-12T06:09:49.411+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (226)"}
+[2025-02-12T06:09:49.417+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (227)"}
+[2025-02-12T06:09:49.423+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (227)"}
+[2025-02-12T06:09:49.426+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (227)"}
+[2025-02-12T06:09:49.432+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (228)"}
+[2025-02-12T06:09:49.436+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (228)"}
+[2025-02-12T06:09:49.439+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (228)"}
+[2025-02-12T06:09:49.445+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (229)"}
+[2025-02-12T06:09:49.448+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (229)"}
+[2025-02-12T06:09:49.451+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (229)"}
+[2025-02-12T06:09:49.457+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (230)"}
+[2025-02-12T06:09:49.460+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (230)"}
+[2025-02-12T06:09:49.463+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (230)"}
+[2025-02-12T06:09:49.470+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (231)"}
+[2025-02-12T06:09:49.473+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (231)"}
+[2025-02-12T06:09:49.476+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (231)"}
+[2025-02-12T06:09:49.482+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (232)"}
+[2025-02-12T06:09:49.485+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (232)"}
+[2025-02-12T06:09:49.488+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (232)"}
+[2025-02-12T06:09:49.495+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (233)"}
+[2025-02-12T06:09:49.498+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (233)"}
+[2025-02-12T06:09:49.500+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (233)"}
+[2025-02-12T06:09:49.507+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (234)"}
+[2025-02-12T06:09:49.510+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Mna New Collection id from satellite tile table is: de13f244-8b64-4d8c-ae11-35b8ab38e3a2.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (234)"}
+[2025-02-12T06:09:49.513+0000] {_base_logger.py:66} DEBUG - {"worker": "SentinelImageTileService", "msg": "Sentinel image tile created Successfully.", "level": "DEBUG", "sat_image_tile": "SatelliteImageTile object (234)"}
+[2025-02-12T06:09:49.515+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Successfully Updated search results to the database and obtaining created tiles.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:49.518+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Adding Tiles to the collection request.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:49.590+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Tiles added Successfully to the collection request.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:49.600+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Tile_counts updated successfully in the database.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:49.603+0000] {_base_logger.py:66} DEBUG - {"worker": "NewCollectionRequestService", "msg": "Set IsSearchSuccessful flag to True.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:49.609+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Making request to get access token.", "level": "DEBUG", "new_collection_request": "de13f244-8b64-4d8c-ae11-35b8ab38e3a2"}
+[2025-02-12T06:09:49.613+0000] {connectionpool.py:1014} DEBUG - Starting new HTTPS connection (1): identitystg.fgic.gov.ae:443
+[2025-02-12T06:09:49.630+0000] {logging_mixin.py:154} WARNING - /home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py:1056 InsecureRequestWarning: Unverified HTTPS request is being made to host 'identitystg.fgic.gov.ae'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+[2025-02-12T06:09:49.991+0000] {connectionpool.py:473} DEBUG - https://identitystg.fgic.gov.ae:443 "POST /auth/realms/fgic/protocol/openid-connect/token HTTP/1.1" 200 2398
+[2025-02-12T06:09:49.993+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Extracting access token from the response.", "level": "DEBUG", "new_collection_request": "de13f244-8b64-4d8c-ae11-35b8ab38e3a2"}
+[2025-02-12T06:09:49.999+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Access Token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlR05aUjkwd0dQMkxlU19TWlYzWFlYeGdiSVpZcGFwTFY0YXNkV0trQmU4In0.eyJleHAiOjE3MzkzNDQyMDksImlhdCI6MTczOTM0MDYwOSwianRpIjoiYTY4ZDRjYmEtM2U3OC00YWEzLTg2YWItMjZlNjkwZGMzOTI3IiwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eXN0Zy5mZ2ljLmdvdi5hZS9hdXRoL3JlYWxtcy9mZ2ljIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjBmN2ZhNmY5LTE5OTktNGVjYi1iNTU4LWE0OTdlNTcxNmI5MCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNvZGVyaXplIiwic2Vzc2lvbl9zdGF0ZSI6Ijg5N2ZmMjMyLTFiN2UtNDRkNy1hMTUwLTYzY2ZjYzJkYjI3MiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1mZ2ljIiwib2ZmbGluZV9hY2Nlc3MiLCJDb250cmlidXRvciIsInVtYV9hdXRob3JpemF0aW9uIiwiY29kZXJpemUiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiI4OTdmZjIzMi0xYjdlLTQ0ZDctYTE1MC02M2NmY2MyZGIyNzIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6ImNvZGUgcml6ZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNvZGVyaXplIiwiZ2l2ZW5fbmFtZSI6ImNvZGUiLCJsb2NhbGUiOiJlbiIsImZhbWlseV9uYW1lIjoicml6ZSIsImVtYWlsIjoia2hhcmFkaXNhcWliLmNvZGVyaXplQGdtYWlsLmNvbSJ9.ZcE9SOfQaehnMoDQtMxFAlDp1mhQS2XoclhhWW9MXrSmRNh5iKI-kDN3yLHEFndKUQ34czFjtousU8WtYxne0rhsPuyDCNgY9PYYIEt6HMHjFiaj6XSbgoR-igSkBApc4I6i6mEP2XdfpZlr4yOPhR1sdgkqtn6OJoiTRniABjVhjpHnBAi4JdbVZ013Q6F5mh2XnTy2DABaYMW4jiH4Ko48L3izYMps99Q1u_dL0sXXLR9AysYm15QrBBeQKClOk0ANjVkUKWJfPO3bmRs_WQroj0hiqB3hJvsJgLszkRbfVCjzgFlBoE0EeiHfDQuqz6PnIbsOsOpUdN8Z66HQRw", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:50.004+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Tile count get successfully", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:50.009+0000] {connectionpool.py:1014} DEBUG - Starting new HTTPS connection (1): platformstg.fgic.gov.ae:443
+[2025-02-12T06:09:50.022+0000] {logging_mixin.py:154} WARNING - /home/ladsadmin/FGICWebApp/venv/lib/python3.10/site-packages/urllib3/connectionpool.py:1056 InsecureRequestWarning: Unverified HTTPS request is being made to host 'platformstg.fgic.gov.ae'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+[2025-02-12T06:09:50.121+0000] {connectionpool.py:473} DEBUG - https://platformstg.fgic.gov.ae:443 "POST /fgic-integration/new-collection/status HTTP/1.1" 200 None
+[2025-02-12T06:09:50.123+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Request URL: https://platformstg.fgic.gov.ae/fgic-integration/new-collection/status", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:50.127+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Request Body: b'{\"new_collection_id\": \"de13f244-8b64-4d8c-ae11-35b8ab38e3a2\", \"status\": \"COMPLETED\", \"message\": \"20 tiles found.\", \"count\": 20}'", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:50.130+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Request Headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlR05aUjkwd0dQMkxlU19TWlYzWFlYeGdiSVpZcGFwTFY0YXNkV0trQmU4In0.eyJleHAiOjE3MzkzNDQyMDksImlhdCI6MTczOTM0MDYwOSwianRpIjoiYTY4ZDRjYmEtM2U3OC00YWEzLTg2YWItMjZlNjkwZGMzOTI3IiwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eXN0Zy5mZ2ljLmdvdi5hZS9hdXRoL3JlYWxtcy9mZ2ljIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjBmN2ZhNmY5LTE5OTktNGVjYi1iNTU4LWE0OTdlNTcxNmI5MCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImNvZGVyaXplIiwic2Vzc2lvbl9zdGF0ZSI6Ijg5N2ZmMjMyLTFiN2UtNDRkNy1hMTUwLTYzY2ZjYzJkYjI3MiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1mZ2ljIiwib2ZmbGluZV9hY2Nlc3MiLCJDb250cmlidXRvciIsInVtYV9hdXRob3JpemF0aW9uIiwiY29kZXJpemUiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiI4OTdmZjIzMi0xYjdlLTQ0ZDctYTE1MC02M2NmY2MyZGIyNzIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6ImNvZGUgcml6ZSIsInByZWZlcnJlZF91c2VybmFtZSI6ImNvZGVyaXplIiwiZ2l2ZW5fbmFtZSI6ImNvZGUiLCJsb2NhbGUiOiJlbiIsImZhbWlseV9uYW1lIjoicml6ZSIsImVtYWlsIjoia2hhcmFkaXNhcWliLmNvZGVyaXplQGdtYWlsLmNvbSJ9.ZcE9SOfQaehnMoDQtMxFAlDp1mhQS2XoclhhWW9MXrSmRNh5iKI-kDN3yLHEFndKUQ34czFjtousU8WtYxne0rhsPuyDCNgY9PYYIEt6HMHjFiaj6XSbgoR-igSkBApc4I6i6mEP2XdfpZlr4yOPhR1sdgkqtn6OJoiTRniABjVhjpHnBAi4JdbVZ013Q6F5mh2XnTy2DABaYMW4jiH4Ko48L3izYMps99Q1u_dL0sXXLR9AysYm15QrBBeQKClOk0ANjVkUKWJfPO3bmRs_WQroj0hiqB3hJvsJgLszkRbfVCjzgFlBoE0EeiHfDQuqz6PnIbsOsOpUdN8Z66HQRw', 'PentaOrgID': 'fgic', 'PentaUserRole': 'coderize', 'Content-Type': 'application/json', 'Content-Length': '127'}", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:50.133+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "Response Status Code: 200", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:50.135+0000] {_base_logger.py:66} DEBUG - {"worker": "SatProductSearchWorker", "msg": "'search' method of service executed Successfully.", "level": "DEBUG", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:50.138+0000] {_base_logger.py:40} INFO - {"worker": "SatProductSearchWorker", "msg": "Well Done!! SatProductSearchWorker Completed Successfully.", "level": "INFO", "collection_request": "NewCollectionRequest object (18)"}
+[2025-02-12T06:09:50.140+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-02-12T06:09:50.141+0000] {__init__.py:74} DEBUG - Lineage called with inlets: [], outlets: []
+[2025-02-12T06:09:50.141+0000] {taskinstance.py:844} DEBUG - Refreshing TaskInstance <TaskInstance: B1_Sat_Product_Search_Worker.sat_search_sub_worker manual__2025-02-12T06:07:10.859800+00:00 map_index=0 [running]> from DB
+[2025-02-12T06:09:50.167+0000] {taskinstance.py:1458} DEBUG - Clearing next_method and next_kwargs.
+[2025-02-12T06:09:50.167+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=B1_Sat_Product_Search_Worker, task_id=sat_search_sub_worker, map_index=0, execution_date=20250212T060710, start_date=20250212T060715, end_date=20250212T060950
+[2025-02-12T06:09:50.168+0000] {taskinstance.py:2430} DEBUG - Task Duration set to 154.678177
+[2025-02-12T06:09:50.186+0000] {cli_action_loggers.py:85} DEBUG - Calling callbacks: []
+[2025-02-12T06:09:50.221+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-02-12T06:09:50.259+0000] {dagrun.py:734} DEBUG - number of tis tasks for <DagRun B1_Sat_Product_Search_Worker @ 2025-02-12 06:07:10.859800+00:00: manual__2025-02-12T06:07:10.859800+00:00, state:running, queued_at: 2025-02-12 06:07:10.912335+00:00. externally triggered: True>: 0 task(s)
+[2025-02-12T06:09:50.259+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
